@@ -54,7 +54,7 @@ void endcode(){
     if(choice2 == "Yes" || choice2=="yes"){
         system("cls");
         welcome();
-    }if(choice2 =="No" || choice2=="no"){
+    }if(choice2 =="No" || choice2 =="no"){
         system("cls");
         cout<<"Very well then\n Good Bye";
         return;
