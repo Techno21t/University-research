@@ -1,10 +1,15 @@
 #include <iostream>
 #include <String>
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 using namespace std; 
 
 //public//
- string university [4][3] {university [0][1] ="York university", university[0][2]="Ontario Tech university", university[0][3]= "UofT (University of Toronto)", university[1][1]="What is the total (university) undergraduate enrollment for the year? \n+59,000 enrolled in undergrad programs", university[2][1]="What is the percentage of women (or men) enrolled? \nIn a past survey 67\\%\\ are men and 33\\%\\ are women enrolled at york university ",};
+ string university [4][3] {university [0][1] ="York university", university[0][2]="Ontario Tech university", university[0][3]= "UofT (University of Toronto)"};
+ string info1 [3] {info1 [1]="-What is the total (university) undergraduate enrollment for the year? \n +59,000 enrolled in undergrad programs\n", info1 [2]="-What is the percentage of women (or men) enrolled?\n In a past survey 67% are men and 33% are women enrolled at york university\n", info1[3]="-What is the yearly undergraduate tuition \n Domestic tuition is $7,758 and international is $26,978"};
+string info2 [3] {info2[1]="-What is the total (university) undergraduate enrollment for the year?\n +10,000 undergraduate and graduate students enrolled\n",info2[2]="-What is the percentage of women (or men) enrolled?\n 43% of enrollments at ontario tech university was women in 2018-2019\n", info2[3]="-What is the yearly undergraduate tuition\n Domestic tuition is 7,209 cad, international tuition is 17,153 cad"};
+string info3 [3] {info3[1]="-What is the total (university) undergraduate enrollment for the year?\n There is roughly about 71,166 enrolled as undergraduates in the fall of 2020\n", info3[2]="-What is the percentage of women (or men) enrolled?\n In the fall of 2020 there are 54% females and 46% men enrolled\n", info3[3]="-What is the yearly undergraduate tuition\n Domestic tuition is 6,590 cad, international tuition is 45,690 cad"};
 
 void welcome(){
     system ("color 0B");
@@ -19,15 +24,21 @@ void welcome(){
     string choice;
     cout<<"which universit would u like to see 1. 2. or 3.\n";
     cin >> choice;
-    if( choice == "1."){
-        cout<<university [1][0];
-        cout<<university [2][0];
-        cout<<university [3][0];
+    if( choice == "1." || choice == "1"){
+        cout<<info1 [0]<<endl;
+        cout<<info1 [1]<<endl;
+        cout<<info1 [2]<<endl;
+    } if( choice == "2." || choice == "2"){
+        cout<<info2 [0]<<endl;
+        cout<<info2 [1]<<endl;
+        cout<<info2 [2]<<endl;
     }
-
+    if( choice == "3." || choice == "3"){
+        cout<<info3 [0]<<endl;
+        cout<<info3 [1]<<endl;
+        cout<<info3 [2]<<endl;
+    }
 }
-
-
 int main(){
     welcome();
 }
