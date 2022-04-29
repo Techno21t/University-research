@@ -52,7 +52,7 @@ void endcode(){
     string choice2;
     cin>> choice2;
     if(choice2 == "Yes" || choice2=="yes"){
-        system("CLR");
+        system("cls");
         welcome();
     }if(choice2 =="No" || choice2=="no"){
         system("cls");
